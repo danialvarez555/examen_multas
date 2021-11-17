@@ -41,10 +41,10 @@ if(isset($_REQUEST['buscar']
                      </tfoot> 
                      </table>';
                  }
-                  else
-                  {
-                     echo "La multa seleccionada ya esta pagada";
-                  }
+                 else
+                 {
+                    echo "La multa seleccionada ya esta pagada";
+                 }
               }
      }
 }
