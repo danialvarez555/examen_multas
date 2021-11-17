@@ -1,6 +1,19 @@
 <?php
-
+session_start();
 include 'head.php';
+if(isset($_REQUEST['borrar']))
+{
+  $idmulta=count($_SESSION['multas']);
+  $matricula=$_REQUEST['matricula'];
+  $fechahora=['fecha_hora'];
+  foreach($_SESSION['multas'] as $clave=>$vector)
+  {
+    if($vector['matricula']==$matricula)
+    {
+      unset($_SESSION['multas'][$idmulta]);
+    }
+ }
+} 
 echo' 
 Introduce los datos de la Multa a Borrar<mark>(1.5 Puntos)<br><br>
                          
