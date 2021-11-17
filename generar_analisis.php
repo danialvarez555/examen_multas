@@ -11,17 +11,20 @@ echo'Analisis de las Multas por Radares <mark>(1.5 Puntos)<br><br>
       <th>Radar 4</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td>10</td>
-      <td>20</td>
+  <tbody>';
+  
+    '<tr>
+      <td>''</td>
+      <td></td>
       <td>15</td>
       <td>67</td>
     </tr>
     
-  </tfoot>
-</table>
+   </tfoot>
+   /table>';
+  }
+    
 
-';
+
 include 'pie.php';
 
