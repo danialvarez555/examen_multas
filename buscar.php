@@ -21,7 +21,15 @@ if(isset($_REQUEST['buscar']
      foreach($vector as $indice=>$valor) 
      { 
              if($indice=='matricula' && $valor==$matricula) 
-             echo
+             <tbody>'; 
+             '<tr> 
+             <td>''</td> 
+             <td></td> 
+             <td>15</td> 
+             <td>67</td> 
+             </tr> 
+             </tfoot> 
+             </table>';
 }
 echo' 
 Introduce la Matricula de la Multa/s <mark> NO PAGADAS</mark> a Buscar<mark>(1 Puntos)<br><br>
