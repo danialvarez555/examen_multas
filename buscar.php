@@ -26,18 +26,26 @@ if(isset($_REQUEST['buscar']
      foreach($vector as $indice=>$valor) 
      { 
              if($indice=='matricula' && $valor==$matricula) 
-             
-             echo' <tr> 
-             <td>$valor[0]</td> 
-             <td>$valor[1]</td> 
-             <td>$valor[2]</td> 
-             <td>$valor[3]</td>
-             <td>$valor[4]</td>
-             <td>$valor[5]</td>
-             <td>$valor[6]</td>
-             </tr> 
-             </tfoot> 
-             </table>';
+             {
+                 if($indice=='pagar' && $valor=='no')
+                 {
+                     echo' <tr> 
+                     <td>$valor[0]</td> 
+                     <td>$valor[1]</td> 
+                     <td>$valor[2]</td> 
+                     <td>$valor[3]</td>
+                     <td>$valor[4]</td>
+                     <td>$valor[5]</td>
+                     <td>$valor[6]</td>
+                     </tr> 
+                     </tfoot> 
+                     </table>';
+                  }
+                  else
+                  {
+                     echo "La multa seleccionada ya esta pagada";
+                  }
+              }
      }
 }
 echo' 
