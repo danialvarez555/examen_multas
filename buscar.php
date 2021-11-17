@@ -13,7 +13,12 @@ if(isset($_REQUEST['buscar']
   <table> 
   <thead> 
   <td>Matricula</td> 
-  <td>Puntuación</td> 
+  <td>Radar</td>
+  <td>Limite</td>
+  <td>Velocidad</td>
+  <td>Cuantia</td>
+  <td>Fecha y hora</td>
+  <td>Pagada</td>
   </thead> 
   <tbody>';
   foreach($_SESSION['multas'] as $clave=>$vector)
@@ -26,7 +31,10 @@ if(isset($_REQUEST['buscar']
              <td>$valor[0]</td> 
              <td>$valor[1]</td> 
              <td>$valor[2]</td> 
-             <td>$valor[3]</td> 
+             <td>$valor[3]</td>
+             <td>$valor[4]</td>
+             <td>$valor[5]</td>
+             <td>$valor[6]</td>
              </tr> 
              </tfoot> 
              </table>';
