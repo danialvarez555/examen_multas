@@ -40,7 +40,7 @@ if(isset($_REQUEST['buscar']
                      </tr> 
                      </tfoot> 
                      </table>';
-                  }
+                 }
                   else
                   {
                      echo "La multa seleccionada ya esta pagada";
