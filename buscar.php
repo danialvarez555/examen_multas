@@ -7,6 +7,22 @@ echo '<pre>';
 var_dump($_SESSION['multas']);
 echo '</pre>'; 
 include 'head.php';
+if(isset($_REQUEST['buscar']
+{
+  echo ' 
+  <table> 
+  <thead> 
+  <td>Nombre Equipo</td> 
+  <td>Puntuación</td> 
+  </thead> 
+  <tbody>';
+  foreach($_SESSION['multas'] as $clave=>$vector)
+  { 
+     foreach($vector as $indice=>$valor) 
+     { 
+             if($indice=='matricula' && $valor==$matricula) 
+             echo
+}
 echo' 
 Introduce la Matricula de la Multa/s <mark> NO PAGADAS</mark> a Buscar<mark>(1 Puntos)<br><br>
                          
