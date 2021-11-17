@@ -12,7 +12,7 @@ if(isset($_REQUEST['buscar']
   echo ' 
   <table> 
   <thead> 
-  <td>Nombre Equipo</td> 
+  <td>Matricula</td> 
   <td>Puntuación</td> 
   </thead> 
   <tbody>';
@@ -21,12 +21,12 @@ if(isset($_REQUEST['buscar']
      foreach($vector as $indice=>$valor) 
      { 
              if($indice=='matricula' && $valor==$matricula) 
-             <tbody>'; 
+             
              '<tr> 
-             <td>''</td> 
-             <td></td> 
-             <td>15</td> 
-             <td>67</td> 
+             <td>$valor[0]</td> 
+             <td>$valor[1]</td> 
+             <td>$valor[2]</td> 
+             <td>$valor[3]</td> 
              </tr> 
              </tfoot> 
              </table>';
