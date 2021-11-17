@@ -27,7 +27,7 @@ if(isset($_REQUEST['buscar']
      { 
              if($indice=='matricula' && $valor==$matricula) 
              {
-                 if($indice=='pagar' && $valor=='no')
+                 if($indice=='pagada' && $valor=='NO')
                  {
                      echo' <tr> 
                      <td>$valor[0]</td> 
